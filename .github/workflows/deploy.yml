@@ -39,7 +39,7 @@ jobs:
           # Remove API routes for static export
           rm -rf src/app/api
           # Build with static export enabled
-          STATIC_EXPORT=true npm run build
+          STATIC_EXPORT=true BASE_PATH=/chatbots-with-api ASSET_PREFIX=/chatbots-with-api/ npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

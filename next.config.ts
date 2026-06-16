@@ -11,9 +11,9 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   
-  // For GitHub Pages deployment with a repo name subdirectory
-  basePath: "/chatbots-with-api",
-  assetPrefix: "/chatbots-with-api/",
+  // Set basePath via env var for GitHub Pages, leave empty for Vercel
+  ...(process.env.BASE_PATH && { basePath: process.env.BASE_PATH }),
+  ...(process.env.ASSET_PREFIX && { assetPrefix: process.env.ASSET_PREFIX }),
   
   // Trailing slash for better static hosting compatibility
   trailingSlash: true,

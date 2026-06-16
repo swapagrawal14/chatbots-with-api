@@ -1,5 +1,5 @@
-# Deploy Next.js site to GitHub Pages
-name: Deploy Next.js site to Pages
+# Deploy to GitHub Pages
+name: Deploy to GitHub Pages
 
 on:
   push:
@@ -34,8 +34,12 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build with Next.js
-        run: npx next build
+      - name: Build static export
+        run: |
+          # Remove API routes for static export
+          rm -rf src/app/api
+          # Build with static export enabled
+          STATIC_EXPORT=true npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

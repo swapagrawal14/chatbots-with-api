@@ -2,6 +2,7 @@
 
 A stunning, production-ready chatbot web application that lets users chat with AI models from multiple providers using their own API keys. Features 20+ free models including the latest OpenRouter models like **Owl Alpha** and **Nex-N2 Pro**.
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Try%20it%20now!-brightgreen?style=for-the-badge&logo=vercel)](https://chatbots-with-api-i3bn.vercel.app/)
 ![Next.js](https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.9-blue?style=for-the-badge&logo=typescript)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.1-38B2AC?style=for-the-badge&logo=tailwind-css)
@@ -49,6 +50,10 @@ Your app will be live at: `https://YOUR_USERNAME.github.io/YOUR_REPO/`
 ---
 
 ## 🚀 Deploy to Vercel
+
+### 🌐 Live Demo
+
+**Try it now:** [https://chatbots-with-api-i3bn.vercel.app/](https://chatbots-with-api-i3bn.vercel.app/)
 
 ### One-Click Deploy
 1. Push to GitHub
